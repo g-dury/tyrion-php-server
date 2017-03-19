@@ -1,0 +1,25 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data:
+    server: https://api.kubernetes.terrainengine.net
+  name: kubernetes.terrainengine.net
+contexts:
+- context:
+    cluster: kubernetes.terrainengine.net
+    user: kubernetes.terrainengine.net
+  name: kubernetes.terrainengine.net
+current-context: kubernetes.terrainengine.net
+kind: Config
+preferences: {}
+users:
+- name: kubernetes.terrainengine.net
+  user:
+    client-certificate-data:
+    client-key-data:
+    password: 
+    username: admin
+- name: kubernetes.terrainengine.net-basic-auth
+  user:
+    password: 
+    username: admin
