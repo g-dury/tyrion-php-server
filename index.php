@@ -7,9 +7,9 @@ $filter= [ 'custom_message' =>  ['$exists' => true ] ];
 
 $query = new MongoDB\Driver\Query($filter);
 $rows = $manager->executeQuery('test.test', $query); // $mongo contains the connection object to MongoDB
-foreach($rows as $r){
+foreach ($rows as $r) {
    var_dump($r);
-};
+}
 echo "Hello world";
 
 ?>
