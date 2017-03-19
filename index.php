@@ -2,7 +2,6 @@
 
 
 $manager = new MongoDB\Driver\Manager("mongodb://mongodb-mongodb-replicas:27017");
-var_dump($manager);
 
 $filter= [ 'custom_message' =>  ['$exists' => true ] ];
 
@@ -12,7 +11,5 @@ foreach($rows as $r){
    var_dump($r);
 }
 
-
-echo "Hello world";
 
 ?>
